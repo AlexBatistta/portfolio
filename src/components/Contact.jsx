@@ -1,7 +1,5 @@
-import React from 'react'
+import React from 'react';
 
 export const Contact = () => {
-  return (
-    <section>Contact</section>
-  )
-}
+	return <section>Contact</section>;
+};

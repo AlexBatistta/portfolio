@@ -1,15 +1,18 @@
-@import "./assets/fonts/fonts.css";
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-	--color-dark-background: oklch(0.282 0.091 267.935);
-	--color-light-background: oklch(0.882 0.059 254.128);
-	--color-secondary: oklch(0.424 0.199 265.638);
-	--color-primary: oklch(0.809 0.105 251.813);
-	--font-roboto: "Roboto", sans-serif;
-	--font-roboto-mono: "Roboto Mono", monospace;
-	--font-roboto-italic: "Roboto", sans-serif;
-	--font-roboto-mono-italic: "Roboto Mono", monospace;
+	--color-dark-background: #070c20;
+	--color-light-background: #ffffff;
+	--color-secondary: #41e7e3;
+	--color-primary: #0a3e6d;
+	--color-tertiary: #888da3;
+	--font-roboto: 'Roboto', sans-serif;
+	--font-roboto-mono: 'Roboto Mono', monospace;
+	--font-roboto-italic: 'Roboto', sans-serif;
+	--font-roboto-mono-italic: 'Roboto Mono', monospace;
 }
 
 @layer {

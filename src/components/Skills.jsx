@@ -1,7 +1,5 @@
-import React from 'react'
+import React from 'react';
 
 export const Skills = () => {
-  return (
-    <section>Skills</section>
-  )
-}
+	return <section className='text-white my-[300px]'>Skills</section>;
+};
