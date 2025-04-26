@@ -4,8 +4,11 @@ import { lightBlue } from '../utils';
 import { NavBar } from './NavBar';
 import { AiFillSun, AiFillMoon } from 'react-icons/ai';
 import { FaRegSquare } from "react-icons/fa";
+import { MdMenu } from 'react-icons/md';
+import { ResponsiveMenu } from './ResponsiveMenu';
 
 export const Header = () => {
+  const [showMenu, setShowMenu] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(true);
   const [language, setLanguage] = useState('en');
 
@@ -26,7 +29,16 @@ export const Header = () => {
 
       <NavBar />
 
-      <div className='gap-2 flex items-center'>
+      {/* Mobile Menu */}
+      <button
+        className="sm:hidden flex justify-center items-center cursor-pointer"
+        onClick={() => setShowMenu(!showMenu)}
+      >
+        <MdMenu className="text-2xl text-secondary" />
+      </button>
+
+      {/* Desktop Menu */}
+      <div className='gap-2 items-center hidden sm:flex'>
         <button onClick={toggleTheme} className="text-secondary text-3xl cursor-pointer">
           {isDarkMode ? <AiFillSun /> : <AiFillMoon />}
         </button>
@@ -40,6 +52,10 @@ export const Header = () => {
           </span>
         </button>
       </div>
+
+
+      {/* Mobile Sidebar */}
+      <ResponsiveMenu showMenu={showMenu} />
     </header>
   );
 };

@@ -12,7 +12,7 @@ function App() {
       <Header />
       <Hero />
       <About />
-      <Skills className="m-16" />
+      <Skills />
       <Projects />
       <Contact />
     </main>

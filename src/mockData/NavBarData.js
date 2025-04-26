@@ -1,27 +1,22 @@
 export const NavBarData = [
 	{
 		id: 1,
-		title: 'Home',
+		title: 'ABOUT',
 		url: '#',
 	},
 	{
 		id: 2,
-		title: 'About',
+		title: 'SKILLS',
 		url: '#',
 	},
 	{
 		id: 3,
-		title: 'Skills',
+		title: 'PROJECTS',
 		url: '#',
 	},
 	{
 		id: 4,
-		title: 'Projects',
-		url: '#',
-	},
-	{
-		id: 5,
-		title: 'Contact',
+		title: 'CONTACT',
 		url: '#',
 	},
 ];
