@@ -8,37 +8,37 @@ import { ResponsiveMenu } from './ResponsiveMenu';
 export const NavBar = () => {
     const [showMenu, setShowMenu] = React.useState(false);
     // const [showTheme, setShowTheme] = React.useState(false);
-  return (
-    <>
-        <nav>
-            <div className='container'>
-                {/* Logo */}
-                <div className='flex justify-center items-center gap-1 cursor-pointer'>
-                    <GoDeviceDesktop />
+    return (
+        <>
+            <nav>
+                <div className='flex justify-between w-full bg-blue-900 p-5'>
+                    {/* Logo */}
+                    <div className='flex justify-center items-center gap-1 cursor-pointer'>
+                        <GoDeviceDesktop />
+                    </div>
+                    {/* Menu */}
+                    <div className='hidden sm:block'>
+                        <ul className='flex justify-center items-center gap-6'>
+                            {
+                                data.map((item) => {
+                                    return (
+                                        <li key={item.id}>
+                                            <a href={item.url} className='parraph'>{item.title}</a>
+                                        </li>
+                                    )
+                                })
+                            }
+                        </ul>
+                    </div>
+                    {/* Theme Switcher */}
+                    {/* Mobile hamburger */}
+                    <div className='sm:hidden flex justify-center items-center cursor-pointer' onClick={() => setShowMenu(!showMenu)}>
+                        <MdMenu className='text-2xl' />
+                    </div>
                 </div>
-                {/* Menu */}
-                <div className='hidden sm:block'>
-                    <ul className='flex justify-center items-center gap-6'>
-                        {
-                            data.map((item) => {
-                                return (
-                                    <li key={item.id}>
-                                        <a href={item.url}>{item.title}</a>
-                                    </li>
-                                )
-                            })
-                        }
-                    </ul>
-                </div>
-                {/* Theme Switcher */}
-                {/* Mobile hamburger */}
-                <div className='sm:hidden flex justify-center items-center cursor-pointer' onClick={() => setShowMenu(!showMenu)}>
-                    <MdMenu className='text-2xl'/>
-                </div>
-            </div>
-        </nav>
-        {/* Mobile Sidebar */}
-        <ResponsiveMenu showMenu={showMenu}/>
-    </>
-  )
+            </nav>
+            {/* Mobile Sidebar */}
+            <ResponsiveMenu showMenu={showMenu} />
+        </>
+    )
 }

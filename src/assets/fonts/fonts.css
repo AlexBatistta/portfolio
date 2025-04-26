@@ -1,0 +1,31 @@
+@font-face {
+	font-family: "Roboto";
+	src: url("./Roboto-VariableFont_wdth,wght.ttf") format("truetype");
+	font-weight: 100 900; /* Soporta pesos de 100 a 900 */
+	font-stretch: 75% 100%; /* Soporta anchos variables */
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Roboto";
+	src: url("./Roboto-Italic-VariableFont_wdth,wght.ttf") format("truetype");
+	font-weight: 100 900; /* Soporta pesos de 100 a 900 */
+	font-stretch: 75% 100%; /* Soporta anchos variables */
+	font-style: italic;
+}
+
+@font-face {
+	font-family: "Roboto Mono";
+	src: url("./RobotoMono-VariableFont_wdth,wght.ttf") format("truetype");
+	font-weight: 100 900; /* Soporta pesos de 100 a 900 */
+	font-stretch: 75% 100%; /* Soporta anchos variables */
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Roboto Mono";
+	src: url("./RobotoMono-Italic-VariableFont_wdth,wght.ttf") format("truetype");
+	font-weight: 100 900; /* Soporta pesos de 100 a 900 */
+	font-stretch: 75% 100%; /* Soporta anchos variables */
+	font-style: italic;
+}

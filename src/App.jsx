@@ -7,13 +7,13 @@ import { Skills } from "./components/Skills"
 
 function App() {
   return (
-    <main className="flex flex-col px-10 bg-blue-950 w-full h-screen text-white gap-6">
-      <NavBar/>
-      <Hero/>
-      <About/>
-      <Skills/>
-      <Projects/>
-      <Contact/>
+    <main className="flex flex-col bg-blue-950 w-full h-screen text-white bg-gradient-to-tl from-blue-900 to-indigo-950">
+      <NavBar />
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+      <Contact />
     </main>
   )
 }
