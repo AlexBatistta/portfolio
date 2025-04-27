@@ -8,7 +8,7 @@ import "../i18n";
 
 function App() {
   return (
-    <main className="flex flex-col w-full h-screen dark:bg-dark-background bg-light-background">
+    <main className="flex flex-col w-full h-full dark:bg-dark-background bg-light-background">
       <Header />
       <Hero />
       <About />

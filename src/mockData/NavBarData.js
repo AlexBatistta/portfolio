@@ -7,22 +7,22 @@ export const NavBarData = () => {
 		{
 			id: 1,
 			title: t('navbar.about'),
-			url: '#',
+			url: 'about',
 		},
 		{
 			id: 2,
 			title: t('navbar.skills'),
-			url: '#',
+			url: 'skills',
 		},
 		{
 			id: 3,
 			title: t('navbar.projects'),
-			url: '#',
+			url: 'projects',
 		},
 		{
 			id: 4,
 			title: t('navbar.contact'),
-			url: '#',
+			url: 'contact',
 		},
 	];
 };

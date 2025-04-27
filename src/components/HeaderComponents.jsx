@@ -18,15 +18,21 @@ export const LogoBtn = () => {
 
 export const NavBar = () => {
     const data = NavBarData();
+    const handleScroll = (id) => {
+        const element = document.getElementById(id);
+        const header = document.getElementById('header');
+        const headerHeight = header.offsetHeight;
+        window.scrollTo({ top: element.offsetTop - headerHeight, behavior: 'smooth' });
+    };
     return (
         <nav className="hidden sm:block">
             <ul className="flex justify-center items-center gap-6">
                 {data.map((item) => {
                     return (
                         <li key={item.id}>
-                            <a href={item.url} className="parraph nav-link">
+                            <button onClick={() => handleScroll(item.url)} className="parraph nav-link">
                                 {item.title}
-                            </a>
+                            </button>
                         </li>
                     );
                 })}
