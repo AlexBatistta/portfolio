@@ -8,7 +8,7 @@
 	--color-light-background: #ffffff;
 	--color-secondary: #41e7e3;
 	--color-primary: #0a3e6d;
-	--color-tertiary: #888da3;
+	--color-tertiary: #c7c9d3;
 	--font-roboto: 'Roboto', sans-serif;
 	--font-roboto-mono: 'Roboto Mono', monospace;
 	--font-roboto-italic: 'Roboto', sans-serif;
@@ -26,7 +26,7 @@
 		@apply text-white text-base bg-gradient-to-br from-blue-900 to-blue-500 hover:bg-gradient-to-bl font-medium rounded-lg px-5 py-2.5 text-center me-2 mb-2 shadow-md shadow-blue-500/50 font-roboto;
 	}
 	.parraph {
-		@apply text-base font-roboto text-white;
+		@apply text-base font-roboto text-tertiary;
 	}
 	.nav-link {
 		@apply relative after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-secondary after:top-7 after:left-0 after:scale-x-0 after:origin-center after:transition-transform after:duration-300 after:rounded-full hover:after:scale-x-100;
