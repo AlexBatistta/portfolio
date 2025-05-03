@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { SectionTitle } from './SectionTitle';
+import { useTranslation } from 'react-i18next';
 
 export const Contact = () => {
+	const { t } = useTranslation();
 	const [form, setForm] = useState({ name: '', email: '', message: '' });
 
 	const handleChange = (e) => {
@@ -35,7 +37,7 @@ export const Contact = () => {
 			>
 				<input
 					type="text"
-					placeholder="Name"
+					placeholder={t('contact.name')}
 					className="w-2/3 bg-gray-800 text-white p-2"
 					required
 					onChange={handleChange}
@@ -44,7 +46,7 @@ export const Contact = () => {
 				/>
 				<input
 					type="email"
-					placeholder="Email"
+					placeholder={t('contact.email')}
 					className="w-2/3 bg-gray-800 text-white p-2"
 					required
 					onChange={handleChange}
@@ -52,14 +54,14 @@ export const Contact = () => {
 					name='email'
 				/>
 				<textarea
-					placeholder="Message"
+					placeholder={t('contact.message')}
 					className="w-2/3 bg-gray-800 text-white p-2"
 					required
 					onChange={handleChange}
 					value={form.message}
 					name='message'
 				></textarea>
-				<button type="submit" className="py-2 px-10 cursor-pointer rounded-full bg-blue-600 text-white">Send</button>
+				<button type="submit" className="py-2 px-10 cursor-pointer rounded-full bg-blue-600 text-white">{t('contact.send')}</button>
 			</form>
 		</section>
 	);

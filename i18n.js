@@ -11,6 +11,17 @@ i18n.use(initReactI18next).init({
 					projects: 'PROJECTS',
 					contact: 'CONTACT',
 				},
+				hero: {
+					title: 'Frontend Developer',
+					subtitle: "Hi! I'm Alex Batistta",
+					download: 'Download CV',
+				},
+				contact: {
+					name: 'Name',
+					email: 'Email',
+					message: 'Message',
+					send: 'Send',
+				},
 			},
 		},
 		es: {
@@ -20,6 +31,17 @@ i18n.use(initReactI18next).init({
 					skills: 'HABILIDADES',
 					projects: 'PROYECTOS',
 					contact: 'CONTACTO',
+				},
+				hero: {
+					title: 'Desarrollador Frontend',
+					subtitle: '¡Hola! Soy Alex Batistta',
+					download: 'Descargar CV',
+				},
+				contact: {
+					name: 'Nombre',
+					email: 'Correo electrónico',
+					message: 'Mensaje',
+					send: 'Enviar',
 				},
 			},
 		},
