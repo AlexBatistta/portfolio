@@ -30,7 +30,7 @@ export const NavBar = () => {
                 {data.map((item) => {
                     return (
                         <li key={item.id}>
-                            <button onClick={() => handleScroll(item.url)} className="parraph nav-link">
+                            <button onClick={() => handleScroll(item.url)} className="paraph nav-link cursor-pointer">
                                 {item.title}
                             </button>
                         </li>
