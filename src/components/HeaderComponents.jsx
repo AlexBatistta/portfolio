@@ -3,10 +3,11 @@ import { lightBlue } from '../utils';
 import { AiFillSun, AiFillMoon } from 'react-icons/ai';
 import { FaRegSquare } from "react-icons/fa";
 import { MdMenu } from 'react-icons/md';
-import { AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import { NavBarData } from '../mockData/NavBarData';
 import { useTranslation } from 'react-i18next';
+// eslint-disable-next-line no-unused-vars
+import { motion, AnimatePresence } from 'framer-motion';
 
 export const LogoBtn = () => {
     return (
@@ -41,7 +42,7 @@ export const NavBar = () => {
     );
 };
 
-export const MobileMenu = (setShowMenu, showMenu) => {
+export const MobileMenu = ({ setShowMenu, showMenu }) => {
     return (
         <button
             className="sm:hidden flex justify-center items-center cursor-pointer"
