@@ -9,6 +9,14 @@ import { useTranslation } from 'react-i18next';
 // eslint-disable-next-line no-unused-vars
 import { motion, AnimatePresence } from 'framer-motion';
 
+
+const handleScroll = (id) => {
+    const element = document.getElementById(id);
+    const header = document.getElementById('header');
+    const headerHeight = header.offsetHeight;
+    window.scrollTo({ top: element.offsetTop - headerHeight, behavior: 'smooth' });
+};
+
 export const LogoBtn = () => {
     return (
         <button className='flex items-center cursor-pointer' onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
@@ -17,14 +25,8 @@ export const LogoBtn = () => {
     )
 }
 
-export const NavBar = () => {
+export const DesktopMenu = () => {
     const data = NavBarData();
-    const handleScroll = (id) => {
-        const element = document.getElementById(id);
-        const header = document.getElementById('header');
-        const headerHeight = header.offsetHeight;
-        window.scrollTo({ top: element.offsetTop - headerHeight, behavior: 'smooth' });
-    };
     return (
         <nav className="hidden sm:block">
             <ul className="flex justify-center items-center gap-6">
@@ -42,18 +44,22 @@ export const NavBar = () => {
     );
 };
 
-export const MobileMenu = ({ setShowMenu, showMenu }) => {
+export const ResponsiveContainer = ({ setShowMenu, showMenu }) => {
     return (
-        <button
-            className="sm:hidden flex justify-center items-center cursor-pointer"
-            onClick={() => setShowMenu(!showMenu)}
-        >
-            <MdMenu className="text-2xl text-secondary" />
-        </button>
+        <div>
+            <button
+                className="sm:hidden flex justify-center items-center cursor-pointer"
+                onClick={() => setShowMenu(!showMenu)}
+            >
+                <MdMenu className="text-2xl text-secondary" />
+            </button>
+            <ButtonsContainer className={'hidden sm:flex'} />
+        </div>
+
     )
 }
 
-export const DesktopMenu = () => {
+const ButtonsContainer = ({ className }) => {
     const [isDarkMode, setIsDarkMode] = useState(true);
     const { i18n } = useTranslation();
 
@@ -68,7 +74,7 @@ export const DesktopMenu = () => {
         document.documentElement.setAttribute('lang', newLanguage);
     };
     return (
-        <div className='gap-4 items-center hidden sm:flex'>
+        <div className={`gap-4 items-center ${className}`}>
             <button onClick={toggleTheme} className="text-secondary text-3xl cursor-pointer">
                 {isDarkMode ? <AiFillSun /> : <AiFillMoon />}
             </button>
@@ -85,7 +91,8 @@ export const DesktopMenu = () => {
     )
 }
 
-export const MobileSidebar = ({ showMenu }) => {
+export const MobileSidebar = ({ setShowMenu, showMenu }) => {
+    const data = NavBarData();
     return (
         <AnimatePresence mode="wait">
             {showMenu && (
@@ -96,15 +103,24 @@ export const MobileSidebar = ({ showMenu }) => {
                     transition={{ duration: 0.3 }}
                     className="absolute top-20 left-0 h-[calc(100vh-5rem)] z-20 w-full"
                 >
-                    <div className="bg-black text-white rounded-2xl mx-6 p-6">
+                    <nav className="bg-black text-white rounded-2xl mx-6 p-6 flex-col justify-center items-center">
                         <ul className="flex flex-col justify-center items-center gap-6">
-                            <li className="cursor-pointer px-5 py-2">Home</li>
-                            <li className="cursor-pointer px-5 py-2">About</li>
-                            <li className="cursor-pointer px-5 py-2">Skills</li>
-                            <li className="cursor-pointer px-5 py-2">Projects</li>
-                            <li className="cursor-pointer px-5 py-2">Contact</li>
+                            {data.map((item) => {
+                                return (
+                                    <li key={item.id}>
+                                        <button onClick={() => {
+                                            handleScroll(item.url);
+                                            setShowMenu(!showMenu)
+                                        }
+                                        } className="paraph nav-link cursor-pointer">
+                                            {item.title}
+                                        </button>
+                                    </li>
+                                );
+                            })}
                         </ul>
-                    </div>
+                        <ButtonsContainer className={'flex justify-center mt-6'} />
+                    </nav>
                 </motion.div>
             )}
         </AnimatePresence>
