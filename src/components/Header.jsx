@@ -1,20 +1,25 @@
 import { useState } from 'react';
-import { LogoBtn, ResponsiveContainer, DesktopMenu, MobileSidebar } from './HeaderComponents';
-
+import {
+	LogoBtn,
+	ResponsiveContainer,
+	DesktopMenu,
+	MobileSidebar,
+} from './HeaderComponents';
 
 export const Header = () => {
-  const [showMenu, setShowMenu] = useState(false);
-  return (
-    <header id="header" className="section z-50 bg-blue-900 fixed top-0 left-0">
-      <LogoBtn />
+	const [showMenu, setShowMenu] = useState(false);
+	return (
+		<header
+			id='header'
+			className='section z-50 bg-blue-900 fixed top-0 left-0'
+		>
+			<LogoBtn />
 
-      <DesktopMenu />
+			<DesktopMenu />
 
-      <ResponsiveContainer setShowMenu={setShowMenu} showMenu={showMenu} />
+			<ResponsiveContainer setShowMenu={setShowMenu} showMenu={showMenu} />
 
-      <MobileSidebar setShowMenu={setShowMenu} showMenu={showMenu} />
-    </header>
-  );
+			<MobileSidebar setShowMenu={setShowMenu} showMenu={showMenu} />
+		</header>
+	);
 };
-
-

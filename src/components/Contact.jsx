@@ -29,25 +29,25 @@ export const Contact = () => {
 	};
 
 	return (
-		<section id="contact" className="section flex-col mb-[300px] gap-4">
-			<SectionTitle section="contact" />
+		<section id='contact' className='section flex-col mb-[300px] gap-4'>
+			<SectionTitle section='contact' />
 			<form
-				className="flex flex-col items-center justify-center w-full gap-4"
+				className='flex flex-col items-center justify-center w-full gap-4'
 				onSubmit={handleSubmit}
 			>
 				<input
-					type="text"
+					type='text'
 					placeholder={t('contact.name')}
-					className="w-2/3 bg-gray-800 text-white p-2"
+					className='w-2/3 bg-gray-800 text-white p-2'
 					required
 					onChange={handleChange}
 					value={form.name}
 					name='name'
 				/>
 				<input
-					type="email"
+					type='email'
 					placeholder={t('contact.email')}
-					className="w-2/3 bg-gray-800 text-white p-2"
+					className='w-2/3 bg-gray-800 text-white p-2'
 					required
 					onChange={handleChange}
 					value={form.email}
@@ -55,13 +55,18 @@ export const Contact = () => {
 				/>
 				<textarea
 					placeholder={t('contact.message')}
-					className="w-2/3 bg-gray-800 text-white p-2"
+					className='w-2/3 bg-gray-800 text-white p-2'
 					required
 					onChange={handleChange}
 					value={form.message}
 					name='message'
 				></textarea>
-				<button type="submit" className="py-2 px-10 cursor-pointer rounded-full bg-blue-600 text-white">{t('contact.send')}</button>
+				<button
+					type='submit'
+					className='py-2 px-10 cursor-pointer rounded-full bg-blue-600 text-white'
+				>
+					{t('contact.send')}
+				</button>
 			</form>
 		</section>
 	);
