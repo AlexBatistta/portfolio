@@ -40,7 +40,7 @@ export const DesktopMenu = () => {
 						<li key={item.id}>
 							<button
 								onClick={() => handleScroll(item.url)}
-								className='paraph nav-link cursor-pointer'
+								className='nav-link nav-button'
 							>
 								{item.title}
 							</button>
@@ -123,7 +123,7 @@ export const MobileSidebar = ({ setShowMenu, showMenu }) => {
 												handleScroll(item.url);
 												setShowMenu(!showMenu);
 											}}
-											className='paraph nav-link cursor-pointer'
+											className='nav-link nav-button'
 										>
 											{item.title}
 										</button>
@@ -131,7 +131,7 @@ export const MobileSidebar = ({ setShowMenu, showMenu }) => {
 								);
 							})}
 						</ul>
-						<ButtonsContainer className={'flex justify-center mt-6'} />
+						<ButtonsContainer className={'flex justify-center mt-15'} />
 					</nav>
 				</motion.div>
 			)}

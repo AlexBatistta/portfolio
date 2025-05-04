@@ -29,7 +29,7 @@ export const Contact = () => {
 	};
 
 	return (
-		<section id='contact' className='section flex-col mb-[300px] gap-4'>
+		<section id='contact' className='section'>
 			<SectionTitle section='contact' />
 			<form
 				className='flex flex-col items-center justify-center w-full gap-4'

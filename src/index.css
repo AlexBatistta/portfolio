@@ -26,12 +26,18 @@
 		@apply text-white text-base bg-gradient-to-br from-blue-900 to-blue-500 hover:bg-gradient-to-bl font-medium rounded-lg px-5 py-2.5 text-center me-2 mb-2 shadow-md shadow-blue-500/50 font-roboto;
 	}
 	.paraph {
-		@apply text-base font-roboto text-tertiary;
+		@apply text-xl font-roboto text-tertiary indent-10;
+	}
+	.nav-button {
+		@apply text-base font-roboto text-tertiary whitespace-nowrap cursor-pointer;
 	}
 	.nav-link {
 		@apply relative after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-secondary after:top-7 after:left-0 after:scale-x-0 after:origin-center after:transition-transform after:duration-300 after:rounded-full hover:after:scale-x-100;
 	}
 	.section {
-		@apply flex justify-between items-center w-full px-10 py-2;
+		@apply flex flex-col justify-between items-center w-full px-10 pt-2 pb-10 gap-4;
+	}
+	.header {
+		@apply flex  items-center justify-between w-full px-10 py-2 z-50 bg-blue-900 fixed top-0 left-0;
 	}
 }
