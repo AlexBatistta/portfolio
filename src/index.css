@@ -1,7 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..900;1,100..900&display=swap');
 @import 'tailwindcss';
 
 @custom-variant dark (&:where(.dark, .dark *));
+
+@font-face {
+	font-family: 'Poppins';
+	src: url('./assets/fonts/Poppins-Bold.woff2') format('woff2');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('./assets/fonts/roboto-regular.woff2') format('woff2');
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
 
 @theme {
 	--color-dark-background: #070c20;
@@ -10,17 +25,15 @@
 	--color-primary: #0a3e6d;
 	--color-tertiary: #c7c9d3;
 	--font-roboto: 'Roboto', sans-serif;
-	--font-roboto-mono: 'Roboto Mono', monospace;
-	--font-roboto-italic: 'Roboto', sans-serif;
-	--font-roboto-mono-italic: 'Roboto Mono', monospace;
+	--font-poppins: 'Poppins', sans-serif;
 }
 
 @layer {
 	.title {
-		@apply text-5xl font-extrabold font-roboto-mono text-primary;
+		@apply text-5xl font-extrabold font-poppins text-primary;
 	}
 	.subtitle {
-		@apply text-2xl font-medium font-roboto text-primary dark:text-white;
+		@apply text-2xl font-medium font-poppins text-primary dark:text-white;
 	}
 	.button {
 		@apply text-white text-base bg-gradient-to-br from-blue-900 to-blue-500 hover:bg-gradient-to-bl font-medium rounded-lg px-5 py-2.5 text-center me-2 mb-2 shadow-md shadow-blue-500/50 font-roboto;
