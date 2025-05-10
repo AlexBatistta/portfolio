@@ -22,6 +22,10 @@ i18n.use(initReactI18next).init({
 					message: 'Message',
 					send: 'Send',
 				},
+				footer: {
+					name: '© 2025 Alex Batistta — Front-End Developer',
+					mail: 'batistta.alex@gmail.com',
+				},
 			},
 		},
 		es: {
@@ -42,6 +46,10 @@ i18n.use(initReactI18next).init({
 					email: 'Correo electrónico',
 					message: 'Mensaje',
 					send: 'Enviar',
+				},
+				footer: {
+					name: '© 2025 Alex Batistta — Desarrollador Front-End',
+					mail: 'batistta.alex@gmail.com',
 				},
 			},
 		},

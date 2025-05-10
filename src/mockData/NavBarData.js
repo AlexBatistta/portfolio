@@ -11,13 +11,13 @@ export const NavBarData = () => {
 		},
 		{
 			id: 2,
-			title: t('navbar.skills'),
-			url: 'skills',
+			title: t('navbar.projects'),
+			url: 'projects',
 		},
 		{
 			id: 3,
-			title: t('navbar.projects'),
-			url: 'projects',
+			title: t('navbar.skills'),
+			url: 'skills',
 		},
 		{
 			id: 4,
