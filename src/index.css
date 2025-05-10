@@ -41,7 +41,7 @@
 		@apply text-xl font-roboto text-white indent-10;
 	}
 	.nav-button {
-		@apply text-base font-roboto text-white whitespace-nowrap cursor-pointer;
+		@apply text-base font-poppins text-white whitespace-nowrap cursor-pointer;
 	}
 	.nav-link {
 		@apply relative after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-secondary after:top-7 after:left-0 after:scale-x-0 after:origin-center after:transition-transform after:duration-300 after:rounded-full hover:after:scale-x-100;
