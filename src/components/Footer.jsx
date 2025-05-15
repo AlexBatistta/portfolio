@@ -7,7 +7,7 @@ export const Footer = () => {
 		<footer>
 			<div className='absolute w-full h-1.5 bg-secondary' />
 			<div className='flex items-center justify-between p-10'>
-				<div className='text-white opacity-50 text-base'>
+				<div className='text-primary dark:text-white dark:opacity-50 text-base'>
 					<p>{t("footer.name")}</p>
 					<p>{t("footer.mail")}</p>
 				</div>

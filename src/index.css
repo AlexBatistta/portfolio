@@ -19,7 +19,7 @@
 }
 
 @theme {
-	--color-dark-background: #0c101f;
+	--color-darker: #0c101f;
 	--color-light-background: #ffffff;
 	--color-secondary: #6cc5ce;
 	--color-primary: #0d3f68;
@@ -29,11 +29,15 @@
 
 @layer {
 	.title {
-		@apply text-5xl font-extrabold font-poppins text-primary;
+		@apply text-7xl font-extrabold font-poppins text-darker dark:text-white;
 	}
 	.subtitle {
-		@apply text-3xl font-medium font-poppins text-primary dark:text-white;
+		@apply text-4xl font-medium font-roboto text-darker dark:text-white;
 	}
+	.titleSection {
+		@apply text-3xl font-medium font-poppins text-darker dark:text-white;
+	}
+
 	.button {
 		@apply text-white text-base bg-gradient-to-br from-blue-900 to-blue-500 hover:bg-gradient-to-bl font-medium rounded-lg px-5 py-2.5 text-center me-2 mb-2 shadow-md shadow-blue-500/50 font-roboto;
 	}

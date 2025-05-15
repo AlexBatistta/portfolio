@@ -12,9 +12,14 @@ i18n.use(initReactI18next).init({
 					contact: 'CONTACT',
 				},
 				hero: {
-					title: 'Frontend Developer',
-					subtitle: "Hi! I'm Alex Batistta",
+					hello: "Hi! I'm",
+					name: 'Alex Batistta',
+					developer: 'Front-End Developer',
 					download: 'Download CV',
+				},
+				projects: {
+					description:
+						'Ingles Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam labore voluptatem quas dolore quisquam libero fuga sunt	reprehenderit, vitae ea. Officiis in aliquid est porro autem aspernatur fuga minus natus.',
 				},
 				contact: {
 					name: 'Name',
@@ -37,9 +42,14 @@ i18n.use(initReactI18next).init({
 					contact: 'CONTACTO',
 				},
 				hero: {
-					title: 'Desarrollador Frontend',
-					subtitle: '¡Hola! Soy Alex Batistta',
+					hello: 'Hola! Soy',
+					name: 'Alex Batistta',
+					developer: 'Desarrollador Front-End',
 					download: 'Descargar CV',
+				},
+				projects: {
+					description:
+						'Español Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam labore voluptatem quas dolore quisquam libero fuga sunt	reprehenderit, vitae ea. Officiis in aliquid est porro autem aspernatur fuga minus natus.',
 				},
 				contact: {
 					name: 'Nombre',

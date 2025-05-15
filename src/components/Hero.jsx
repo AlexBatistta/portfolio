@@ -5,10 +5,15 @@ import hexagon from '../assets/images/hexagon.svg';
 export const Hero = () => {
 	const { t } = useTranslation();
 	return (
-		<section className='section !flex-row !justify-around'>
+		<section className='section sm:!flex-row  !justify-around'>
 			<div className='flex flex-col gap-6'>
-				<h2 className='subtitle'>{t('hero.subtitle')}</h2>
-				<h1 className='title'>{t('hero.title')}</h1>
+				<div className="flex items-center gap-4">
+					<div className="h-1.5 bg-secondary rounded-r-full flex-grow -ml-[15vw]" />
+					<h3 className="subtitle whitespace-nowrap w-[90%]">{t('hero.hello')}</h3>
+				</div>
+
+				<h2 className='title'>{t('hero.name')}</h2>
+				<h1 className='subtitle'>{t('hero.developer')}</h1>
 				<button className='button'>{t('hero.download')}</button>
 			</div>
 			<HexagonProfile />

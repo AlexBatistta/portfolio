@@ -4,7 +4,7 @@ import { SectionTitle } from './SectionTitle';
 export const About = () => {
 	return (
 		<section id='about' className='section bg-primary rounded-bl-4xl rounded-tr-4xl'>
-			<SectionTitle section='about' />
+			<SectionTitle section='about' withBackground={true} />
 			<p className='paraph'>
 				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam
 				labore voluptatem quas dolore quisquam libero fuga sunt

@@ -19,7 +19,7 @@ function App() {
 	}, []);
 	return (
 		<main
-			className='flex flex-col w-full h-full dark:bg-dark-background bg-light-background'
+			className='flex flex-col w-full h-full dark:bg-darker bg-light-background'
 			style={{ paddingTop: `${headerHeight}px` }}
 		>
 			<Header />
