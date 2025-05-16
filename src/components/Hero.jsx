@@ -7,7 +7,7 @@ export const Hero = () => {
 	const { t } = useTranslation();
 	return (
 		<section className='section !justify-around sm:!flex-row'>
-			<div className='flex flex-col gap-4'>
+			<div className='flex flex-col gap-4 mb-10 sm:mb-0'>
 				<div className='flex items-center gap-4'>
 					<div className='bg-secondary -ml-[15vw] h-1.5 flex-grow rounded-r-full' />
 					<h3 className='subtitle w-[90%] whitespace-nowrap'>
