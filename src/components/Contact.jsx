@@ -32,13 +32,13 @@ export const Contact = () => {
 		<section id='contact' className='section'>
 			<SectionTitle section='contact' />
 			<form
-				className='flex flex-col items-center justify-center w-full gap-4'
+				className='flex w-full flex-col items-center justify-center gap-4'
 				onSubmit={handleSubmit}
 			>
 				<input
 					type='text'
 					placeholder={t('contact.name')}
-					className='w-2/3 bg-gray-800 text-white p-2'
+					className='w-2/3 bg-gray-800 p-2 text-white'
 					required
 					onChange={handleChange}
 					value={form.name}
@@ -47,7 +47,7 @@ export const Contact = () => {
 				<input
 					type='email'
 					placeholder={t('contact.email')}
-					className='w-2/3 bg-gray-800 text-white p-2'
+					className='w-2/3 bg-gray-800 p-2 text-white'
 					required
 					onChange={handleChange}
 					value={form.email}
@@ -55,7 +55,7 @@ export const Contact = () => {
 				/>
 				<textarea
 					placeholder={t('contact.message')}
-					className='w-2/3 bg-gray-800 text-white p-2'
+					className='w-2/3 bg-gray-800 p-2 text-white'
 					required
 					onChange={handleChange}
 					value={form.message}
@@ -63,7 +63,7 @@ export const Contact = () => {
 				></textarea>
 				<button
 					type='submit'
-					className='py-2 px-10 cursor-pointer rounded-full bg-blue-600 text-white'
+					className='cursor-pointer rounded-full bg-blue-600 px-10 py-2 text-white'
 				>
 					{t('contact.send')}
 				</button>

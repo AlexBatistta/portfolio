@@ -9,7 +9,7 @@ import '../i18n';
 import { Footer } from './components/Footer';
 
 function App() {
-	const [ headerHeight, setHeaderHeight ] = useState(0);
+	const [headerHeight, setHeaderHeight] = useState(0);
 
 	useEffect(() => {
 		const header = document.getElementById('header');
@@ -19,7 +19,7 @@ function App() {
 	}, []);
 	return (
 		<main
-			className='flex flex-col w-full h-full dark:bg-darker bg-light-background'
+			className='dark:bg-darker bg-light-background flex h-full w-full flex-col'
 			style={{ paddingTop: `${headerHeight}px` }}
 		>
 			<Header />

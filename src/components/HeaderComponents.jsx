@@ -22,10 +22,10 @@ const handleScroll = (id) => {
 export const LogoBtn = () => {
 	return (
 		<button
-			className='flex items-center cursor-pointer'
+			className='flex cursor-pointer items-center'
 			onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
 		>
-			<Logo className='w-15 h-15' style={{ fill: lightBlue }} />
+			<Logo className='h-15 w-15' style={{ fill: lightBlue }} />
 		</button>
 	);
 };
@@ -34,7 +34,7 @@ export const DesktopMenu = () => {
 	const data = NavBarData();
 	return (
 		<nav className='hidden sm:block'>
-			<ul className='flex justify-center items-center gap-6'>
+			<ul className='flex items-center justify-center gap-6'>
 				{data.map((item) => {
 					return (
 						<li key={item.id}>
@@ -56,10 +56,10 @@ export const ResponsiveContainer = ({ setShowMenu, showMenu }) => {
 	return (
 		<div>
 			<button
-				className='sm:hidden flex justify-center items-center cursor-pointer'
+				className='flex cursor-pointer items-center justify-center sm:hidden'
 				onClick={() => setShowMenu(!showMenu)}
 			>
-				<MdMenu className='text-2xl text-secondary' />
+				<MdMenu className='text-secondary text-2xl' />
 			</button>
 			<ButtonsContainer className={'hidden sm:flex'} />
 		</div>
@@ -81,16 +81,16 @@ const ButtonsContainer = ({ className }) => {
 		document.documentElement.setAttribute('lang', newLanguage);
 	};
 	return (
-		<div className={`gap-4 items-center ${className}`}>
+		<div className={`items-center gap-4 ${className}`}>
 			<button
 				onClick={toggleTheme}
-				className='text-secondary text-3xl cursor-pointer'
+				className='text-secondary cursor-pointer text-3xl'
 			>
 				{isDarkMode ? <AiFillSun /> : <AiFillMoon />}
 			</button>
 			<button
 				onClick={toggleLanguage}
-				className='relative text-xl text-secondary cursor-pointer font-roboto font-medium'
+				className='text-secondary font-roboto relative cursor-pointer text-xl font-medium'
 			>
 				<FaRegSquare className='text-3xl' />
 				<span className='absolute inset-0 flex items-center justify-center text-sm'>
@@ -111,10 +111,10 @@ export const MobileSidebar = ({ setShowMenu, showMenu }) => {
 					animate={{ opacity: '100%', y: 0 }}
 					exit={{ opacity: '0%', y: -100 }}
 					transition={{ duration: 0.3 }}
-					className='absolute top-20 left-0 h-[calc(100vh-5rem)] z-20 w-full'
+					className='absolute top-20 left-0 z-20 h-[calc(100vh-5rem)] w-full'
 				>
-					<nav className='bg-black text-white rounded-2xl mx-6 p-6 flex-col justify-center items-center'>
-						<ul className='flex flex-col justify-center items-center gap-6'>
+					<nav className='mx-6 flex-col items-center justify-center rounded-2xl bg-black p-6 text-white'>
+						<ul className='flex flex-col items-center justify-center gap-6'>
 							{data.map((item) => {
 								return (
 									<li key={item.id}>
@@ -131,7 +131,7 @@ export const MobileSidebar = ({ setShowMenu, showMenu }) => {
 								);
 							})}
 						</ul>
-						<ButtonsContainer className={'flex justify-center mt-15'} />
+						<ButtonsContainer className={'mt-15 flex justify-center'} />
 					</nav>
 				</motion.div>
 			)}

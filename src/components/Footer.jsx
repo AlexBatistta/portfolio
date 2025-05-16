@@ -1,23 +1,19 @@
-import React from 'react'
+import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { SocialButtons } from './Hero';
 
 export const Footer = () => {
 	const { t } = useTranslation();
 	return (
 		<footer>
-			<div className='absolute w-full h-1.5 bg-secondary' />
+			<div className='bg-secondary absolute h-1.5 w-full' />
 			<div className='flex items-center justify-between p-10'>
-				<div className='text-primary dark:text-white dark:opacity-50 text-base'>
-					<p>{t("footer.name")}</p>
-					<p>{t("footer.mail")}</p>
+				<div className='text-primary text-base dark:text-white dark:opacity-50'>
+					<p>{t('footer.name')}</p>
+					<p>{t('footer.mail')}</p>
 				</div>
-				<div className='flex gap-2'>
-					<button className='cursor-pointer border-2 border-secondary w-10 h-10 rounded-xl'></button>
-					<button className='cursor-pointer border-2 border-secondary w-10 h-10 rounded-xl'></button>
-				</div>
+				<SocialButtons />
 			</div>
-
-
 		</footer>
-	)
-}
+	);
+};

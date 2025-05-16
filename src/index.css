@@ -29,31 +29,34 @@
 
 @layer {
 	.title {
-		@apply text-7xl font-extrabold font-poppins text-darker dark:text-white;
+		@apply font-poppins text-darker text-7xl font-extrabold dark:text-white;
 	}
 	.subtitle {
-		@apply text-4xl font-medium font-roboto text-darker dark:text-white;
+		@apply font-roboto text-darker text-4xl font-medium dark:text-white;
 	}
 	.titleSection {
-		@apply text-3xl font-medium font-poppins text-darker dark:text-white;
+		@apply font-poppins text-darker text-3xl font-medium dark:text-white;
 	}
 
 	.button {
-		@apply text-white text-base bg-gradient-to-br from-blue-900 to-blue-500 hover:bg-gradient-to-bl font-medium rounded-lg px-5 py-2.5 text-center me-2 mb-2 shadow-md shadow-blue-500/50 font-roboto;
+		@apply bg-secondary hover:bg-primary font-roboto text-darker cursor-pointer rounded-xl px-5 py-1.75 text-xl font-medium transition duration-300 hover:text-white active:scale-110;
 	}
 	.paraph {
-		@apply text-xl font-roboto text-white indent-10;
+		@apply font-roboto indent-10 text-xl text-white;
 	}
 	.nav-button {
-		@apply text-base font-poppins text-white whitespace-nowrap cursor-pointer;
+		@apply font-poppins cursor-pointer text-base whitespace-nowrap text-white;
 	}
 	.nav-link {
-		@apply relative after:content-[''] after:absolute after:w-full after:h-[2px] after:bg-secondary after:top-7 after:left-0 after:scale-x-0 after:origin-center after:transition-transform after:duration-300 after:rounded-full hover:after:scale-x-100;
+		@apply after:bg-secondary relative after:absolute after:top-7 after:left-0 after:h-[2px] after:w-full after:origin-center after:scale-x-0 after:rounded-full after:transition-transform after:duration-300 after:content-[''] hover:after:scale-x-100;
 	}
 	.section {
-		@apply flex flex-col justify-between items-center w-full p-10 gap-4;
+		@apply flex w-full flex-col items-center justify-between gap-4 p-10;
 	}
 	.header {
-		@apply flex  items-center justify-between w-full px-10 py-2 z-50 bg-primary fixed top-0 left-0 rounded-b-4xl;
+		@apply bg-primary fixed top-0 left-0 z-50 flex w-full items-center justify-between rounded-b-4xl px-10 py-2;
+	}
+	.buttonSecondary {
+		@apply border-secondary hover:border-primary flex h-10 w-10 cursor-pointer items-center justify-center rounded-xl border-2 transition duration-300 active:scale-110;
 	}
 }
