@@ -33,8 +33,8 @@ export const LogoBtn = () => {
 export const DesktopMenu = () => {
 	const data = NavBarData();
 	return (
-		<nav className='hidden sm:block'>
-			<ul className='flex items-center justify-center gap-6'>
+		<nav className='hidden md:block'>
+			<ul className='flex items-center justify-center gap-8'>
 				{data.map((item) => {
 					return (
 						<li key={item.id}>
@@ -56,18 +56,18 @@ export const ResponsiveContainer = ({ setShowMenu, showMenu }) => {
 	return (
 		<div>
 			<button
-				className='flex cursor-pointer items-center justify-center sm:hidden'
+				className='flex cursor-pointer items-center justify-center md:hidden'
 				onClick={() => setShowMenu(!showMenu)}
 			>
 				<MdMenu className='text-secondary text-2xl' />
 			</button>
-			<ButtonsContainer className={'hidden sm:flex'} />
+			<ButtonsContainer className={'hidden md:flex'} />
 		</div>
 	);
 };
 
 const ButtonsContainer = ({ className }) => {
-	const [isDarkMode, setIsDarkMode] = useState(true);
+	const [ isDarkMode, setIsDarkMode ] = useState(true);
 	const { i18n } = useTranslation();
 
 	const toggleTheme = () => {
@@ -107,13 +107,13 @@ export const MobileSidebar = ({ setShowMenu, showMenu }) => {
 		<AnimatePresence mode='wait'>
 			{showMenu && (
 				<motion.div
-					initial={{ opacity: '100%', y: -100 }}
-					animate={{ opacity: '100%', y: 0 }}
-					exit={{ opacity: '0%', y: -100 }}
+					initial={{ scaleY: '0%', y: "-60%", opacity: 0 }}
+					animate={{ scaleY: '100%', y: "0vw", opacity: 100 }}
+					exit={{ scaleY: '0%', y: "-60%", opacity: 0 }}
 					transition={{ duration: 0.3 }}
-					className='absolute top-20 left-0 z-20 h-[calc(100vh-5rem)] w-full'
+					className='absolute top-[15vh] right-0 h-[calc(100vh-5rem)]'
 				>
-					<nav className='mx-6 flex-col items-center justify-center rounded-2xl bg-black p-6 text-white'>
+					<nav className='flex-col items-center justify-center rounded-2xl mr-10 bg-primary py-8 px-20 text-white'>
 						<ul className='flex flex-col items-center justify-center gap-6'>
 							{data.map((item) => {
 								return (

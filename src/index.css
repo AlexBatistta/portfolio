@@ -45,10 +45,10 @@
 		@apply font-roboto indent-10 text-xl text-white;
 	}
 	.nav-button {
-		@apply font-poppins cursor-pointer text-base whitespace-nowrap text-white;
+		@apply font-poppins cursor-pointer text-xl whitespace-nowrap text-white;
 	}
 	.nav-link {
-		@apply after:bg-secondary relative after:absolute after:top-7 after:left-0 after:h-[2px] after:w-full after:origin-center after:scale-x-0 after:rounded-full after:transition-transform after:duration-300 after:content-[''] hover:after:scale-x-100;
+		@apply after:bg-secondary relative after:absolute after:top-7 after:left-0 after:h-1 after:w-full after:origin-center after:scale-x-0 after:rounded-full after:transition-transform after:duration-300 after:content-[''] hover:after:scale-x-100;
 	}
 	.section {
 		@apply flex w-full flex-col items-center justify-between gap-4 p-10;
