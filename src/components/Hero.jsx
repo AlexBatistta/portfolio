@@ -6,8 +6,8 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 export const Hero = () => {
 	const { t } = useTranslation();
 	return (
-		<section className='section !justify-around sm:!flex-row'>
-			<div className='flex flex-col gap-4 mb-10 sm:mb-0'>
+		<section className='section !justify-around md:!flex-row'>
+			<div className='flex flex-col gap-4 mb-10 md:mb-0'>
 				<div className='flex items-center gap-4'>
 					<div className='bg-secondary -ml-[15vw] h-1.5 flex-grow rounded-r-full' />
 					<h3 className='subtitle w-[90%] whitespace-nowrap'>
@@ -17,7 +17,7 @@ export const Hero = () => {
 
 				<h2 className='title'>{t('hero.name')}</h2>
 				<h1 className='subtitle'>{t('hero.developer')}</h1>
-				<div className='flex items-center justify-start gap-10'>
+				<div className='flex items-center justify-start gap-6'>
 					<a className='button' href={`/public/portfolio-${document.documentElement.getAttribute('lang')}.pdf`} download>{t('hero.download')}</a>
 					<SocialButtons />
 				</div>
@@ -29,7 +29,7 @@ export const Hero = () => {
 
 const HexagonProfile = () => {
 	return (
-		<div className='relative flex h-auto w-[400px] items-end justify-center'>
+		<div className='relative flex h-auto md:w-[400px] w-[350px] items-end justify-center '>
 			<img className='z-1 dark:rotate-180' src={hexagon}></img>
 			<img
 				className='absolute bottom-[10px] z-1'
