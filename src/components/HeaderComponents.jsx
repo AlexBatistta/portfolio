@@ -84,7 +84,7 @@ const ButtonsContainer = ({ className }) => {
 		<div className={`items-center gap-4 ${className}`}>
 			<button
 				onClick={toggleTheme}
-				className='text-secondary cursor-pointer text-xl md:text-3xl'
+				className='text-secondary cursor-pointer text-3xl'
 			>
 				{isDarkMode ? <AiFillSun /> : <AiFillMoon />}
 			</button>
