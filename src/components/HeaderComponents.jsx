@@ -59,7 +59,7 @@ export const ResponsiveContainer = ({ setShowMenu, showMenu }) => {
 				className='flex cursor-pointer items-center justify-center md:hidden'
 				onClick={() => setShowMenu(!showMenu)}
 			>
-				<MdMenu className='text-secondary text-lg md:text-2xl' />
+				<MdMenu className='text-secondary text-2xl' />
 			</button>
 			<ButtonsContainer className={'hidden md:flex'} />
 		</div>
