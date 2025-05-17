@@ -9,7 +9,7 @@ export const Hero = () => {
 		<section className='section !justify-around md:!flex-row'>
 			<div className='flex flex-col gap-4 mb-10 md:mb-0'>
 				<div className='flex items-center gap-4'>
-					<div className='bg-secondary -ml-[15vw] h-1.5 flex-grow rounded-r-full' />
+					<div className='bg-secondary -ml-[30vw] md:-ml-[15vw] h-1.5 flex-grow rounded-r-full' />
 					<h3 className='subtitle w-[90%] whitespace-nowrap'>
 						{t('hero.hello')}
 					</h3>
@@ -29,7 +29,7 @@ export const Hero = () => {
 
 const HexagonProfile = () => {
 	return (
-		<div className='relative flex h-auto md:w-[400px] w-[350px] items-end justify-center '>
+		<div className='relative flex h-auto w-[300px] lg:w-[400px] md:w-[350px] items-end justify-center '>
 			<img className='z-1 dark:rotate-180' src={hexagon}></img>
 			<img
 				className='absolute bottom-[10px] z-1'

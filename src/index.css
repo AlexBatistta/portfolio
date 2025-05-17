@@ -29,23 +29,23 @@
 
 @layer {
 	.title {
-		@apply font-poppins text-darker text-7xl font-extrabold dark:text-white;
+		@apply font-poppins text-darker text-5xl font-extrabold md:text-7xl dark:text-white;
 	}
 	.subtitle {
-		@apply font-roboto text-darker text-4xl font-medium dark:text-white;
+		@apply font-roboto text-darker text-2xl font-medium md:text-4xl dark:text-white;
 	}
 	.titleSection {
-		@apply font-poppins text-darker text-3xl font-medium dark:text-white;
+		@apply font-poppins text-darker text-xl font-medium md:text-3xl dark:text-white;
 	}
 
 	.button {
-		@apply bg-secondary hover:bg-primary font-roboto text-darker cursor-pointer rounded-xl px-5 py-1.75 text-xl font-medium transition duration-300 hover:text-white active:scale-110;
+		@apply bg-secondary hover:bg-primary font-roboto text-darker cursor-pointer rounded-xl px-5 py-1.75 text-base font-medium transition duration-300 hover:text-white active:scale-110 md:text-xl;
 	}
 	.paraph {
-		@apply font-roboto indent-10 text-xl text-white;
+		@apply font-roboto indent-10 text-base text-white md:text-xl;
 	}
 	.nav-button {
-		@apply font-poppins cursor-pointer text-xl whitespace-nowrap text-white;
+		@apply font-poppins cursor-pointer text-base whitespace-nowrap text-white md:text-xl;
 	}
 	.nav-link {
 		@apply after:bg-secondary relative after:absolute after:top-7 after:left-0 after:h-1 after:w-full after:origin-center after:scale-x-0 after:rounded-full after:transition-transform after:duration-300 after:content-[''] hover:after:scale-x-100;
