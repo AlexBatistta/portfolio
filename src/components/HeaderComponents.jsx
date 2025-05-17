@@ -4,7 +4,7 @@ import { AiFillSun, AiFillMoon } from 'react-icons/ai';
 import { FaRegSquare } from 'react-icons/fa';
 import { MdMenu } from 'react-icons/md';
 import { useState } from 'react';
-import { NavBarData } from '../mockData/NavBarData';
+import { NavBarData } from '../mockData/listsData';
 import { useTranslation } from 'react-i18next';
 // eslint-disable-next-line no-unused-vars
 import { motion, AnimatePresence } from 'framer-motion';

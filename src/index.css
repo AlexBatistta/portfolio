@@ -25,6 +25,15 @@
 	--color-primary: #0d3f68;
 	--font-roboto: 'Roboto', sans-serif;
 	--font-poppins: 'Poppins', sans-serif;
+	--color-html: #e93e30;
+	--color-css: #214ce5;
+	--color-react: #66dbfb;
+	--color-tailwind: #0fb8d5;
+	--color-javascript: #f1dc55;
+	--color-typescript: #377cc8;
+	--color-git: #f15639;
+	--color-github: #8c37ab;
+	--color-vscode: #0a93d7;
 }
 
 @layer {
@@ -58,5 +67,11 @@
 	}
 	.buttonSecondary {
 		@apply border-secondary hover:border-primary flex h-10 w-10 cursor-pointer items-center justify-center rounded-xl border-2 transition duration-300 active:scale-110;
+	}
+	.skillIcon {
+		@apply bg-darker/15 flex h-20 w-20 cursor-pointer items-center justify-center rounded-2xl border-2 text-5xl transition duration-300;
+	}
+	.skillLabel {
+		@apply bg-darker/15 mb-2 flex h-auto w-18 cursor-pointer items-center justify-center rounded-lg border-2 text-xs text-white opacity-0 transition duration-300 group-hover:opacity-100;
 	}
 }
