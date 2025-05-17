@@ -32,8 +32,11 @@
 	--color-javascript: #f1dc55;
 	--color-typescript: #377cc8;
 	--color-git: #f15639;
-	--color-github: #8c37ab;
-	--color-vscode: #0a93d7;
+	--color-github: #ffffff;
+	--color-router: #f94949;
+	--color-vite: #9575cd;
+	--color-vercel: #ffffff;
+	--color-eslint: #5138c5;
 }
 
 @layer {
@@ -72,6 +75,6 @@
 		@apply bg-darker/15 flex h-20 w-20 cursor-pointer items-center justify-center rounded-2xl border-2 text-5xl transition duration-300;
 	}
 	.skillLabel {
-		@apply bg-darker/15 mb-2 flex h-auto w-18 cursor-pointer items-center justify-center rounded-lg border-2 text-xs text-white opacity-0 transition duration-300 group-hover:opacity-100;
+		@apply bg-darker/15 my-2 flex h-auto w-18 cursor-pointer items-center justify-center rounded-lg border-2 py-1 text-xs text-white opacity-0 transition duration-300 group-hover:opacity-100;
 	}
 }
