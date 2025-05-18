@@ -52,12 +52,12 @@ const HexagonProfile = () => {
 export const SocialButtons = () => {
 	return (
 		<div className='flex gap-3'>
-			<a className='buttonSecondary group' href='https://github.com/AlexBatistta'>
-				<FaGithub className='absolute text-secondary group-hover:text-primary h-6 w-6 transition duration-300 active:scale-110 pointer-events-none' />
+			<a className='buttonSecondary group relative flex items-center justify-center' href='https://github.com/AlexBatistta' aria-label='GitHub'>
+				<FaGithub className='text-secondary group-hover:text-primary h-6 w-6 transition duration-300 active:scale-110' />
 			</a>
 
-			<a className='buttonSecondary group' href="https://www.linkedin.com/in/alex-batistta">
-				<FaLinkedinIn className='absolute text-secondary group-hover:text-primary h-6 w-6 transition duration-300 active:scale-110 pointer-events-none' />
+			<a className='buttonSecondary group relative flex items-center justify-center' href="https://www.linkedin.com/in/alex-batistta" aria-label='LinkedIn'>
+				<FaLinkedinIn className='text-secondary group-hover:text-primary h-6 w-6 transition duration-300 active:scale-110' />
 			</a>
 		</div>
 	);

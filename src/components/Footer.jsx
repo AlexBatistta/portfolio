@@ -7,13 +7,15 @@ export const Footer = () => {
 	return (
 		<footer>
 			<div className='bg-secondary absolute h-1.5 w-full' />
-			<div className='flex items-center justify-between p-10'>
-				<div className='text-primary text-sm md:text-base dark:text-white dark:opacity-50'>
+			<address className='flex items-center justify-between px-5 sm:px-10 py-5 mt-1.5 not-italic'>
+				<div className='text-primary text-xs sm:text-sm md:text-base dark:text-white dark:opacity-50'>
 					<p>{t('footer.name')}</p>
 					<p>{t('footer.mail')}</p>
 				</div>
-				<SocialButtons />
-			</div>
+				<nav className='scale-90' aria-label="Social media">
+					<SocialButtons />
+				</nav>
+			</address>
 		</footer>
 	);
 };
