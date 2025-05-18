@@ -21,7 +21,7 @@ const handleScroll = (id) => {
 export const LogoBtn = () => {
 	return (
 		<button
-			className='flex cursor-pointer items-center'
+			className='flex cursor-pointer items-center transition duration-300 active:scale-110'
 			onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
 		>
 			<Logo className='h-15 w-15 fill-secondary' />
@@ -55,7 +55,7 @@ export const ResponsiveContainer = ({ setShowMenu, showMenu }) => {
 	return (
 		<div>
 			<button
-				className='flex cursor-pointer items-center justify-center md:hidden'
+				className='flex cursor-pointer items-center justify-center md:hidden duration-300 active:scale-110'
 				onClick={() => setShowMenu(!showMenu)}
 			>
 				<MdMenu className='text-secondary text-2xl' />
@@ -83,13 +83,13 @@ const ButtonsContainer = ({ className }) => {
 		<div className={`items-center gap-4 ${className}`}>
 			<button
 				onClick={toggleTheme}
-				className='text-secondary cursor-pointer text-3xl'
+				className='text-secondary cursor-pointer text-3xl duration-300 active:scale-110'
 			>
 				{isDarkMode ? <AiFillSun /> : <AiFillMoon />}
 			</button>
 			<button
 				onClick={toggleLanguage}
-				className='text-secondary font-roboto relative cursor-pointer text-xl font-medium'
+				className='text-secondary font-roboto relative cursor-pointer text-xl font-medium duration-300 active:scale-110'
 			>
 				<FaRegSquare className='text-3xl' />
 				<span className='absolute inset-0 flex items-center justify-center text-sm'>
@@ -110,9 +110,9 @@ export const MobileSidebar = ({ setShowMenu, showMenu }) => {
 					animate={{ scaleY: '100%', y: "0vw", opacity: 100 }}
 					exit={{ scaleY: '0%', y: "-60%", opacity: 0 }}
 					transition={{ duration: 0.3 }}
-					className='absolute top-[15vh] right-0 h-[calc(100vh-5rem)]'
+					className='absolute top-[90px] right-0'
 				>
-					<nav className='flex-col items-center justify-center rounded-2xl mr-10 bg-primary py-8 px-20 text-white'>
+					<nav className='flex-col items-center justify-center rounded-2xl mr-10 bg-primary py-8 w-[250px] text-white'>
 						<ul className='flex flex-col items-center justify-center gap-6'>
 							{data.map((item) => {
 								return (

@@ -62,7 +62,7 @@
 		@apply after:bg-secondary relative after:absolute after:top-7 after:left-0 after:h-1 after:w-full after:origin-center after:scale-x-0 after:rounded-full after:transition-transform after:duration-300 after:content-[''] hover:after:scale-x-100;
 	}
 	.section {
-		@apply flex w-full flex-col items-center justify-between gap-4 p-10;
+		@apply flex w-full flex-col items-center justify-between gap-4 px-10 py-15;
 	}
 	.header {
 		@apply bg-primary fixed top-0 left-0 z-50 flex w-full items-center justify-between rounded-b-4xl px-10 py-2;
@@ -77,6 +77,6 @@
 		@apply bg-darker/15 my-2 flex h-auto w-18 items-center justify-center rounded-lg border-2 py-1 text-xs text-white opacity-0 transition duration-300 group-hover:opacity-100;
 	}
 	.inputContact {
-		@apply border-primary text-primary placeholder:text-primary/50 w-full border-b-2 p-2 dark:border-white dark:text-white dark:placeholder:text-white/50;
+		@apply border-primary text-primary placeholder:text-primary/50 w-full border-b-2 p-2 text-lg outline-none dark:border-white dark:text-white dark:placeholder:text-white/50;
 	}
 }
