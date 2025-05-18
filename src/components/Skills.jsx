@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState, useRef } from 'react';
 import { SectionTitle } from './SectionTitle';
 import {
 	FaHtml5,
@@ -36,6 +36,22 @@ const skillsData = [
 ];
 
 export const Skills = () => {
+	const [ activeIndex, setActiveIndex ] = useState(null);
+	const timeoutRef = useRef(null);
+
+	const handleTap = (index) => {
+		setActiveIndex(index);
+
+		if (timeoutRef.current) {
+			clearTimeout(timeoutRef.current);
+		}
+
+		timeoutRef.current = setTimeout(() => {
+			setActiveIndex(null);
+			timeoutRef.current = null;
+		}, 1000);
+	};
+
 	return (
 		<section
 			id='skills'
@@ -45,9 +61,9 @@ export const Skills = () => {
 			<p className='paraph'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit pariatur at quod odio nisi possimus voluptatibus voluptatum soluta!</p>
 			<ul className='grid grid-cols-3 md:grid-cols-6 sm:grid-cols-4 gap-x-6 justify-items-center'>
 				{skillsData.map((skill, index) => (
-					<li key={index} className="flex flex-col items-center group">
-						<span className={`skillLabel ${skill.border} pointer-events-none`}>{skill.label}</span>
-						<div className={`skillIcon border-secondary ${skill.hover}`}>
+					<li key={index} className="flex flex-col items-center group" onClick={() => handleTap(index)}>
+						<span className={`skillLabel ${skill.border} pointer-events-none ${activeIndex === index ? '!opacity-100' : ''}`}>{skill.label}</span>
+						<div className={`skillIcon  ${skill.hover} ${activeIndex === index ? skill.border : 'border-secondary'}`}>
 							{skill.icon}
 						</div>
 					</li>
