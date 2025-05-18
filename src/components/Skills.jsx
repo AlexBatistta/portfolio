@@ -58,7 +58,7 @@ export const Skills = () => {
 			className='section bg-primary rounded-tr-4xl rounded-bl-4xl'
 		>
 			<SectionTitle section='skills' withBackground={true} />
-			<p className='paraph'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit pariatur at quod odio nisi possimus voluptatibus voluptatum soluta!</p>
+			<p className='paraph !text-white'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit pariatur at quod odio nisi possimus voluptatibus voluptatum soluta!</p>
 			<ul className='grid grid-cols-3 md:grid-cols-6 sm:grid-cols-4 gap-x-6 justify-items-center'>
 				{skillsData.map((skill, index) => (
 					<li key={index} className="flex flex-col items-center group" onClick={() => handleTap(index)}>

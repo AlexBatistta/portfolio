@@ -8,7 +8,7 @@ export const About = () => {
 			className='section bg-primary rounded-tr-4xl rounded-bl-4xl'
 		>
 			<SectionTitle section='about' withBackground={true} />
-			<p className='paraph'>
+			<p className='paraph !text-white'>
 				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam
 				labore voluptatem quas dolore quisquam libero fuga sunt
 				reprehenderit, vitae ea. Officiis in aliquid est porro autem

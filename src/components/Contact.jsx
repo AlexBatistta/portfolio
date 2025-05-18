@@ -4,10 +4,10 @@ import { useTranslation } from 'react-i18next';
 
 export const Contact = () => {
 	const { t } = useTranslation();
-	const [form, setForm] = useState({ name: '', email: '', message: '' });
+	const [ form, setForm ] = useState({ name: '', email: '', message: '' });
 
 	const handleChange = (e) => {
-		setForm({ ...form, [e.target.name]: e.target.value });
+		setForm({ ...form, [ e.target.name ]: e.target.value });
 	};
 
 	const handleSubmit = async (e) => {
@@ -31,43 +31,49 @@ export const Contact = () => {
 	return (
 		<section id='contact' className='section'>
 			<SectionTitle section='contact' />
-			<form
-				className='flex w-full flex-col items-center justify-center gap-4'
-				onSubmit={handleSubmit}
-			>
-				<input
-					type='text'
-					placeholder={t('contact.name')}
-					className='w-2/3 bg-gray-800 p-2 text-white'
-					required
-					onChange={handleChange}
-					value={form.name}
-					name='name'
-				/>
-				<input
-					type='email'
-					placeholder={t('contact.email')}
-					className='w-2/3 bg-gray-800 p-2 text-white'
-					required
-					onChange={handleChange}
-					value={form.email}
-					name='email'
-				/>
-				<textarea
-					placeholder={t('contact.message')}
-					className='w-2/3 bg-gray-800 p-2 text-white'
-					required
-					onChange={handleChange}
-					value={form.message}
-					name='message'
-				></textarea>
-				<button
-					type='submit'
-					className='cursor-pointer rounded-full bg-blue-600 px-10 py-2 text-white'
+			<div className='flex flex-col sm:flex-row w-[100%] justify-between items-start gap-10'>
+				<p className='paraph w-full sm:w-[45%]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores beatae ut</p>
+				<form
+					className='flex flex-col w-full px-5 sm:px-0 sm:w-[55%] lg:px-10 items-end justify-center gap-4'
+					onSubmit={handleSubmit}
 				>
-					{t('contact.send')}
-				</button>
-			</form>
+					<input
+						type='text'
+						placeholder={t('contact.name')}
+						className='inputContact'
+						required
+						onChange={handleChange}
+						value={form.name}
+						name='name'
+					/>
+
+					<input
+						type='email'
+						placeholder={t('contact.email')}
+						className='inputContact'
+						required
+						onChange={handleChange}
+						value={form.email}
+						name='email'
+					/>
+
+					<textarea
+						placeholder={t('contact.message')}
+						className='inputContact'
+						required
+						onChange={handleChange}
+						value={form.message}
+						name='message'
+					></textarea>
+					<button
+						type='submit'
+						className='button !px-8 !py-1 mt-2'
+					>
+						{t('contact.send')}
+					</button>
+				</form>
+			</div>
+
 		</section>
 	);
 };
