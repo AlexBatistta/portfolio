@@ -21,6 +21,24 @@ i18n.use(initReactI18next).init({
 					description:
 						'Ingles Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam labore voluptatem quas dolore quisquam libero fuga sunt	reprehenderit, vitae ea. Officiis in aliquid est porro autem aspernatur fuga minus natus.',
 				},
+				project1: {
+					title: 'Project 1',
+					description:
+						'Ingles Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam labore voluptatem quas dolore quisquam libero fuga sunt reprehenderit, vitae ea. ',
+					tags: ['React', 'JavaScript', 'Tailwind'],
+				},
+				project2: {
+					title: 'Project 2',
+					description:
+						'Ingles Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam labore voluptatem quas dolore',
+					tags: ['React', 'TypeScript', 'Tailwind'],
+				},
+				project3: {
+					title: 'Project 3',
+					description:
+						'Ingles Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam labore voluptatem quas dolore quisquam libero fuga sunt reprehenderit, vitae ea. sdfsdf.',
+					tags: ['HTML5', 'JavaScript', 'CSS'],
+				},
 				contact: {
 					name: 'Name',
 					email: 'Email',
@@ -50,6 +68,24 @@ i18n.use(initReactI18next).init({
 				projects: {
 					description:
 						'Español Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam labore voluptatem quas dolore quisquam libero fuga sunt	reprehenderit, vitae ea. Officiis in aliquid est porro autem aspernatur fuga minus natus.',
+				},
+				project1: {
+					title: 'Proyecto 1',
+					description:
+						'Ingles Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam labore voluptatem quas dolore quisquam libero fuga sunt reprehenderit, vitae ea. ',
+					tags: ['React', 'JavaScript', 'CSS'],
+				},
+				project2: {
+					title: 'Proyecto 2',
+					description:
+						'Ingles Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam labore voluptatem quas dolore quisquam libero fuga ',
+					tags: ['React', 'JavaScript', 'CSS'],
+				},
+				project3: {
+					title: 'Proyecto 3',
+					description:
+						'Ingles Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam labore voluptatem quas dolore quisquam libero fuga sunt reprehenderit, vitae ea. sdfsdf.',
+					tags: ['React', 'JavaScript', 'CSS'],
 				},
 				contact: {
 					name: 'Nombre',

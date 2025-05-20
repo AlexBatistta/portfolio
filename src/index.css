@@ -25,6 +25,7 @@
 	--color-primary: #0d3f68;
 	--font-roboto: 'Roboto', sans-serif;
 	--font-poppins: 'Poppins', sans-serif;
+	--shadow-left: -20px 0 25px -5px;
 	--color-html: #e93e30;
 	--color-css: #214ce5;
 	--color-react: #66dbfb;
