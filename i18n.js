@@ -47,6 +47,12 @@ i18n.use(initReactI18next).init({
 						'Ingles Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam labore voluptatem quas dolore quisquam libero fuga sunt reprehenderit, vitae ea. sdfsdf.',
 					tags: ['HTML5', 'JavaScript', 'CSS'],
 				},
+				skills: {
+					paragraph1:
+						'I work with a stack focused on building accessible, maintainable, and well-structured web interfaces. I combine attention to visual detail with programming best practices, using tools that support scalable projects and a consistent development workflow.',
+					paragraph2:
+						'Here are some of the technologies I use most frequently:',
+				},
 				contact: {
 					name: 'Name',
 					email: 'Email',
@@ -102,6 +108,12 @@ i18n.use(initReactI18next).init({
 					description:
 						'Ingles Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam labore voluptatem quas dolore quisquam libero fuga sunt reprehenderit, vitae ea. sdfsdf.',
 					tags: ['React', 'JavaScript', 'CSS'],
+				},
+				skills: {
+					paragraph1:
+						'Trabajo con un stack enfocado en el desarrollo de interfaces web accesibles, mantenibles y bien estructuradas. Combino la atención al detalle visual con buenas prácticas de programación, utilizando herramientas que permiten escalar proyectos de forma eficiente y mantener un flujo de desarrollo consistente.',
+					paragraph2:
+						'Estas son algunas de las tecnologías que utilizo con mayor frecuencia:',
 				},
 				contact: {
 					name: 'Nombre',

@@ -12,6 +12,7 @@ import { RiTailwindCssFill } from 'react-icons/ri';
 import { BiLogoTypescript } from 'react-icons/bi';
 import { SiReactrouter, SiVercel, SiEslint } from "react-icons/si";
 import ViteLogo from "../assets/images/vite-logo.svg?react";
+import { useTranslation } from 'react-i18next';
 
 const skillsData = [
 	{ icon: <FaHtml5 className='text-html' />, label: 'HTML5', border: 'border-html', hover: 'hover:border-html' },
@@ -36,6 +37,7 @@ const skillsData = [
 ];
 
 export const Skills = () => {
+	const { t } = useTranslation();
 	const [ activeIndex, setActiveIndex ] = useState(null);
 	const timeoutRef = useRef(null);
 
@@ -55,10 +57,13 @@ export const Skills = () => {
 	return (
 		<section
 			id='skills'
-			className='section bg-primary rounded-tr-4xl rounded-bl-4xl'
+			className='section bg-primary rounded-tr-4xl rounded-bl-4xl '
 		>
 			<SectionTitle section='skills' withBackground={true} />
-			<p className='paraph !text-white'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit pariatur at quod odio nisi possimus voluptatibus voluptatum soluta!</p>
+			<span>
+				<p className='paraph !text-white'>{t('skills.paragraph1')}</p>
+				<p className='paraph !text-white'>{t('skills.paragraph2')}</p>
+			</span>
 			<ul className='grid grid-cols-3 md:grid-cols-6 sm:grid-cols-4 gap-x-6 justify-items-center'>
 				{skillsData.map((skill, index) => (
 					<li key={index} className="flex flex-col items-center group" onClick={() => handleTap(index)}>
