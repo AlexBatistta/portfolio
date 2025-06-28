@@ -17,9 +17,17 @@ i18n.use(initReactI18next).init({
 					developer: 'Front-End Developer',
 					download: 'Download CV',
 				},
+				about: {
+					paragraph1:
+						'Frontend developer focused on building modern, accessible, and well-structured web interfaces using technologies like React, Tailwind, JavaScript and TypeScript.',
+					paragraph2:
+						'My professional journey began in game development, where I gained over five years of experience working on complex team projects. That stage gave me a strong foundation in programming logic, abstract thinking, and best practices. Today, I apply that knowledge to web development, with a special focus on code quality and user experience.',
+					paragraph3:
+						'Currently, I combine both disciplines (interactive development and interface design) with the goal of creating smooth, functional, and enjoyable user experiences, paying close attention to visual details as well as the technical structure behind them.',
+				},
 				projects: {
 					description:
-						'Ingles Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam labore voluptatem quas dolore quisquam libero fuga sunt	reprehenderit, vitae ea. Officiis in aliquid est porro autem aspernatur fuga minus natus.',
+						'Ingles Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam labore voluptatem quas dolore quisquam libero fuga sunt reprehenderit, vitae ea. Officiis in aliquid est porro autem aspernatur fuga minus natus.',
 				},
 				project1: {
 					title: 'Project 1',
@@ -64,6 +72,14 @@ i18n.use(initReactI18next).init({
 					name: 'Alex Batistta',
 					developer: 'Desarrollador Front-End',
 					download: 'Descargar CV',
+				},
+				about: {
+					paragraph1:
+						'Desarrollador frontend enfocado en construir interfaces web modernas, accesibles y bien estructuradas utilizando tecnologías como React, Tailwind, JavaScript y TypeScript.',
+					paragraph2:
+						'Mi recorrido profesional comenzó en el desarrollo de videojuegos, donde acumulé más de cinco años de experiencia trabajando en proyectos complejos en equipo. Esa etapa me aportó una base sólida en lógica de programación, pensamiento abstracto y buenas prácticas. Hoy aplico esos conocimientos al desarrollo web, con especial atención a la calidad del código y la experiencia del usuario.',
+					paragraph3:
+						'Actualmente combino ambas disciplinas (desarrollo interactivo y diseño de interfaces web) con el objetivo de crear experiencias fluidas, funcionales y agradables de usar, cuidando tanto los detalles visuales como la estructura técnica detrás.',
 				},
 				projects: {
 					description:

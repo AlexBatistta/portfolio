@@ -1,7 +1,9 @@
 import React from 'react';
 import { SectionTitle } from './SectionTitle';
+import { useTranslation } from 'react-i18next';
 
 export const About = () => {
+	const { t } = useTranslation();
 	return (
 		<section
 			id='about'
@@ -9,11 +11,14 @@ export const About = () => {
 		>
 			<SectionTitle section='about' withBackground={true} />
 			<p className='paraph !text-white'>
-				Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam
-				labore voluptatem quas dolore quisquam libero fuga sunt
-				reprehenderit, vitae ea. Officiis in aliquid est porro autem
-				aspernatur fuga minus natus.
+				{t('about.paragraph1')}
 			</p>
-		</section>
+			<p className='paraph !text-white'>
+				{t('about.paragraph2')}
+			</p>
+			<p className='paraph !text-white'>
+				{t('about.paragraph3')}
+			</p>
+		</section >
 	);
 };
