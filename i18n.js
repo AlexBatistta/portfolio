@@ -27,7 +27,7 @@ i18n.use(initReactI18next).init({
 				},
 				projects: {
 					description:
-						'Ingles Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam labore voluptatem quas dolore quisquam libero fuga sunt reprehenderit, vitae ea. Officiis in aliquid est porro autem aspernatur fuga minus natus.',
+						'Here are some of my most recent personal projects, where I applied various technologies from the frontend ecosystem. Each one reflects hands-on learning, problem-solving, and a focus on user-centered design.',
 				},
 				project1: {
 					title: 'Project 1',
@@ -83,7 +83,7 @@ i18n.use(initReactI18next).init({
 				},
 				projects: {
 					description:
-						'Español Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam labore voluptatem quas dolore quisquam libero fuga sunt	reprehenderit, vitae ea. Officiis in aliquid est porro autem aspernatur fuga minus natus.',
+						'Estos son algunos de mis proyectos personales más recientes, donde apliqué distintas tecnologías del ecosistema frontend. Cada uno representa un ejercicio práctico de aprendizaje, resolución de problemas y diseño centrado en la experiencia del usuario.',
 				},
 				project1: {
 					title: 'Proyecto 1',
