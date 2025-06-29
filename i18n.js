@@ -54,6 +54,7 @@ i18n.use(initReactI18next).init({
 						'Here are some of the technologies I use most frequently:',
 				},
 				contact: {
+					text: 'Inquiries, proposals, or ideas related to development and projects are welcome. Each message will be read carefully and answered as soon as possible.',
 					name: 'Name',
 					email: 'Email',
 					message: 'Message',
@@ -116,6 +117,7 @@ i18n.use(initReactI18next).init({
 						'Estas son algunas de las tecnologías que utilizo con mayor frecuencia:',
 				},
 				contact: {
+					text: 'Consultas, propuestas o ideas relacionadas con desarrollo y proyectos son bienvenidas. Cada mensaje será leído con atención y respondido lo antes posible.',
 					name: 'Nombre',
 					email: 'Correo electrónico',
 					message: 'Mensaje',

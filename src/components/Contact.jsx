@@ -32,7 +32,7 @@ export const Contact = () => {
 		<section id='contact' className='section'>
 			<SectionTitle section='contact' />
 			<div className='flex flex-col sm:flex-row w-[100%] justify-between items-start gap-10'>
-				<p className='paraph w-full sm:w-[45%]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores beatae ut</p>
+				<p className='paraph w-full sm:w-[45%]'>{t('contact.text')}</p>
 				<form
 					className='flex flex-col w-full px-5 sm:px-0 sm:w-[55%] lg:px-10 items-end justify-center gap-4'
 					onSubmit={handleSubmit}
