@@ -3,7 +3,7 @@ export const ProjectCard = ({ isHorizontal = false, className, title, descriptio
 	tags;
 	return (
 		<div className={`bg-primary flex overflow-hidden rounded-4xl w-70 sm:w-auto ${isHorizontal ? 'flex-row  h-60' : 'flex-col'} ${className}`}>
-			<div className={`overflow-hidden rounded-4xl bg-white shadow-darker/25 ${isHorizontal ? "w-[50%] sm:order-1 shadow-left" : "w-full h-auto shadow-xl"} object-cover`}>
+			<div className={`overflow-hidden rounded-4xl  shadow-darker/25 ${isHorizontal ? "w-[50%] sm:order-1 shadow-left" : "w-full h-auto shadow-xl"} object-cover`}>
 				<img className='h-full w-full object-cover' src={image}></img>
 			</div>
 			<div className={`px-5 flex flex-col justify-center py-5 gap-3 grow ${isHorizontal ? 'w-[50%]' : ''}`} >
