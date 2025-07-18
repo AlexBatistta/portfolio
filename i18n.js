@@ -30,22 +30,22 @@ i18n.use(initReactI18next).init({
 						'Here are some of my most recent personal projects, where I applied various technologies from the frontend ecosystem. Each one reflects hands-on learning, problem-solving, and a focus on user-centered design.',
 				},
 				project1: {
-					title: 'Project 1',
+					title: 'Todo App',
 					description:
-						'Ingles Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam labore voluptatem quas dolore quisquam libero fuga sunt reprehenderit, vitae ea. ',
-					tags: ['React', 'JavaScript', 'Tailwind'],
+						'Interactive task manager with advanced features: drag & drop reordering, priority system, smart filtering, and local storage persistence. Fully responsive design for a seamless user experience across all devices.',
+					tags: ['React', 'TypeScript', 'Tailwind'],
 				},
 				project2: {
-					title: 'Project 2',
+					title: 'HacknPlan Data Parser',
 					description:
-						'Ingles Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam labore voluptatem quas dolore',
+						'Web application that transforms raw HacknPlan export data into clean, readable reports. Features bulk CSV processing, intelligent filtering by status and importance, ID-to-name conversion, and flexible export options in CSV or JSON format.',
 					tags: ['React', 'TypeScript', 'Tailwind'],
 				},
 				project3: {
-					title: 'Project 3',
+					title: 'Rock Paper Scissors',
 					description:
-						'Ingles Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam labore voluptatem quas dolore quisquam libero fuga sunt reprehenderit, vitae ea. sdfsdf.',
-					tags: ['HTML5', 'JavaScript', 'CSS'],
+						'Classic game implementation based on a Frontend Mentor challenge. Features interactive gameplay against computer AI, score tracking, and clean responsive design built with vanilla JavaScript and modern CSS.',
+					tags: ['HTML5', 'CSS', 'JavaScript'],
 				},
 				skills: {
 					paragraph1:
@@ -93,22 +93,22 @@ i18n.use(initReactI18next).init({
 						'Estos son algunos de mis proyectos personales más recientes, donde apliqué distintas tecnologías del ecosistema frontend. Cada uno representa un ejercicio práctico de aprendizaje, resolución de problemas y diseño centrado en la experiencia del usuario.',
 				},
 				project1: {
-					title: 'Proyecto 1',
+					title: 'Todo App',
 					description:
-						'Ingles Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam labore voluptatem quas dolore quisquam libero fuga sunt reprehenderit, vitae ea. ',
-					tags: ['React', 'JavaScript', 'CSS'],
+						'Aplicación interactiva para gestión de tareas con características avanzadas: reorganización drag & drop, sistema de prioridades, filtrado inteligente y almacenamiento local. Diseño responsivo para una experiencia fluida en todos los dispositivos.',
+					tags: ['React', 'TypeScript', 'Tailwind'],
 				},
 				project2: {
-					title: 'Proyecto 2',
+					title: 'HacknPlan Data Parser',
 					description:
-						'Ingles Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam labore voluptatem quas dolore quisquam libero fuga ',
-					tags: ['React', 'JavaScript', 'CSS'],
+						'Aplicación web que transforma datos de exportación de HacknPlan en reportes limpios y legibles. Incluye procesamiento masivo de CSV, filtrado inteligente por estado e importancia, conversión de IDs a nombres, y opciones flexibles de exportación en CSV o JSON.',
+					tags: ['React', 'TypeScript', 'Tailwind'],
 				},
 				project3: {
-					title: 'Proyecto 3',
+					title: 'Rock Paper Scissors',
 					description:
-						'Ingles Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam labore voluptatem quas dolore quisquam libero fuga sunt reprehenderit, vitae ea. sdfsdf.',
-					tags: ['React', 'JavaScript', 'CSS'],
+						'Implementación del juego clásico basada en un desafío de Frontend Mentor. Incluye jugabilidad interactiva contra IA, seguimiento de puntuación y diseño responsivo limpio construido con JavaScript vanilla y CSS moderno.',
+					tags: ['HTML5', 'CSS', 'JavaScript'],
 				},
 				skills: {
 					paragraph1:
