@@ -18,7 +18,7 @@ export const Hero = () => {
 				<h2 className='title'>{t('hero.name')}</h2>
 				<h1 className='subtitle'>{t('hero.developer')}</h1>
 				<div className='flex items-center justify-start gap-6'>
-					<a className='button' href={`/public/portfolio-${document.documentElement.getAttribute('lang')}.pdf`} download>{t('hero.download')}</a>
+					<a className='button' href={`/${t('hero.file')}.pdf`} download>{t('hero.download')}</a>
 					<SocialButtons />
 				</div>
 			</div>
