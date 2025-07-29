@@ -45,7 +45,7 @@
 		@apply font-poppins text-darker text-6xl font-extrabold lg:text-7xl dark:text-white;
 	}
 	.subtitle {
-		@apply font-roboto text-darker text-3xl font-medium lg:text-4xl dark:text-white;
+		@apply font-roboto text-darker text-[28px] font-medium lg:text-4xl dark:text-white;
 	}
 	.titleSection {
 		@apply font-poppins text-darker text-2xl font-medium md:text-3xl dark:text-white;
