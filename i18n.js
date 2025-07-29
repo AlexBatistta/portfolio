@@ -35,18 +35,21 @@ i18n.use(initReactI18next).init({
 					description:
 						'Interactive task manager with advanced features: drag & drop reordering, priority system, smart filtering, and local storage persistence. Fully responsive design for a seamless user experience across all devices.',
 					tags: ['React', 'TypeScript', 'Tailwind'],
+					url: 'https://github.com/AlexBatistta/todo-list',
 				},
 				project2: {
 					title: 'HacknPlan Data Parser',
 					description:
 						'Web application that transforms raw HacknPlan export data into clean, readable reports. Features bulk CSV processing, intelligent filtering by status and importance, ID-to-name conversion, and flexible export options in CSV or JSON format.',
 					tags: ['React', 'TypeScript', 'Tailwind'],
+					url: 'https://github.com/AlexBatistta/csv_previewer',
 				},
 				project3: {
 					title: 'Rock Paper Scissors',
 					description:
 						'Classic game implementation based on a Frontend Mentor challenge. Features interactive gameplay against computer AI, score tracking, and clean responsive design built with vanilla JavaScript and modern CSS.',
 					tags: ['HTML5', 'CSS', 'JavaScript'],
+					url: 'https://github.com/AlexBatistta/rock-paper-scissors-master',
 				},
 				skills: {
 					paragraph1:
@@ -99,18 +102,21 @@ i18n.use(initReactI18next).init({
 					description:
 						'Aplicación interactiva para gestión de tareas con características avanzadas: reorganización drag & drop, sistema de prioridades, filtrado inteligente y almacenamiento local. Diseño responsivo para una experiencia fluida en todos los dispositivos.',
 					tags: ['React', 'TypeScript', 'Tailwind'],
+					url: 'https://github.com/AlexBatistta/todo-list',
 				},
 				project2: {
 					title: 'HacknPlan Data Parser',
 					description:
 						'Aplicación web que transforma datos de exportación de HacknPlan en reportes limpios y legibles. Incluye procesamiento masivo de CSV, filtrado inteligente por estado e importancia, conversión de IDs a nombres, y opciones flexibles de exportación en CSV o JSON.',
 					tags: ['React', 'TypeScript', 'Tailwind'],
+					url: 'https://github.com/AlexBatistta/csv_previewer',
 				},
 				project3: {
 					title: 'Rock Paper Scissors',
 					description:
 						'Implementación del juego clásico basada en un desafío de Frontend Mentor. Incluye jugabilidad interactiva contra IA, seguimiento de puntuación y diseño responsivo limpio construido con JavaScript vanilla y CSS moderno.',
 					tags: ['HTML5', 'CSS', 'JavaScript'],
+					url: 'https://github.com/AlexBatistta/rock-paper-scissors-master',
 				},
 				skills: {
 					paragraph1:
