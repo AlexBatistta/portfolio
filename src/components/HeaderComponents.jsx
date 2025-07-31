@@ -1,4 +1,3 @@
-import Logo from '../assets/images/logo.svg?react';
 import { AiFillSun, AiFillMoon } from 'react-icons/ai';
 import { FaRegSquare } from 'react-icons/fa';
 import { MdMenu } from 'react-icons/md';
@@ -24,7 +23,7 @@ export const LogoBtn = () => {
 			className='flex cursor-pointer items-center transition duration-300 active:scale-110'
 			onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
 		>
-			<Logo className='h-15 w-15 fill-secondary' />
+			<img src="/logo.svg" alt="Logo" className='h-15 w-15' />
 		</button>
 	);
 };
